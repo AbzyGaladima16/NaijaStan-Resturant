@@ -1,0 +1,461 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+img{
+    width:150px;
+    height: 150px;
+}
+
+
+/*tOP section*/
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #9e9d9d;
+}
+.mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+span{
+    color: white;
+}
+.green{
+    color: green;
+}
+.white{
+    color: white;
+}
+/*left top section*/
+.left-top{
+    font-size: 1.4rem;
+}
+/*right top section*/
+.right-top ul{
+    display: flex;
+}
+.right-top li{
+    margin-right: 1rem;
+    padding: .8rem;
+    font-weight: 400;
+}
+.right-top li:hover{
+    color: lightslategray;
+    background-color: white;
+}
+/*head section*/
+.head-section{
+    text-align: right;
+    line-height: 3.5rem;
+    padding: 10rem;
+    color: rgb(73, 194, 73);
+    background-color: #9e9d9d;
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head-section h1{
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 5rem;
+    
+}
+.head-section p{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.btn{
+    padding: .8rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: white;
+    width: 140px;
+    background: green;
+    transition: transalte .3s ease-in;
+}
+
+.btn:hover{
+    transform: translateX(20px);
+}
+
+/*hero section*/
+.hero-section{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.left-hero-section{
+    line-height: 1.5rem;
+    padding-top: 10rem;
+}
+.hero-p{
+    max-width: 400px;
+    margin-top: 2rem;
+}
+
+.right-hero-section img{
+    width: 500px ;
+    height: 500px;
+}
+
+/*middle hero section*/
+.middle-hero-section{
+    border: 1px solid transparent;
+    padding: 3rem;
+    margin: 4rem 7rem;
+    position: relative;
+    color: green;
+    background-color: rgb(28, 40, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.middle-hero-section img{
+    width: 250px;
+    height: 200px;
+}
+.m-p{
+    max-width: 300px;
+    align-self: center;
+    margin: 4rem 0;
+    color: white;
+    
+}
+
+.middle-hero-flex{
+  display: flex;
+  gap: 2rem;
+  color: black;
+}
+.dish{
+    text-align: center;
+    padding: 1rem;
+    line-height: 2rem;
+    border: 1px solid green;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.money{
+    color: green;
+    font-weight: 700;
+    
+}
+.checked{
+    color: orange;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(132, 192, 97);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active {
+    background-color: #f8fff8;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*menu section*/
+  .menu-section{
+    margin: 8rem;
+    padding-top: 5rem;
+    text-align: center;
+  }
+  .topH{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+  }
+  .menu-list{
+    display: flex;
+    justify-content: center;
+    line-height: 2.4rem;
+    gap: 2rem;
+  }
+ .dishes, .drink1{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid green;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+ }
+ .dishes h1{
+    font-size: 1.5rem;
+ }
+.dishes img, .drink1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+ }
+ .dishes .money{
+    margin-left: 1rem;
+ }
+ .drink1 .money{
+    margin-left: 1rem;
+ }
+
+ .menu-btn{
+    padding: .7rem 3rem;
+ }
+
+ /*gallery section*/
+ .Gallery{
+    padding: 6rem;
+    background-color: rgb(28, 40, 53);
+    
+ }
+ .Gallery h1{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+ }
+ .gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    grid-gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
+ }
+ .photo img{
+   width: 200px;
+   height: 200px;
+   border: 1px solid transparent;
+   border-radius: 5px;
+ }
+
+/*reservation section*/
+.Reservation{
+    padding: 10rem 7rem;
+}
+.Reservation h1{
+    text-align: center;
+}
+.rev{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.left-rev{
+    line-height: 2rem;
+    max-width: 600px;
+}
+
+
+input{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #000;
+    margin-bottom: 1.4rem;
+    border-radius: 5px;
+}
+.namie{
+    margin-left: 4rem;
+}
+
+select{
+    padding: 8px;
+    width: 150px;
+    border: 1px solid #000;
+    margin-bottom: 1.4rem;
+    border-radius: 5px;
+}
+.dai{
+    margin-left:1.5rem ;
+}
+.foodie{
+    margin-left: 4rem;
+}
+.rev-btn{
+    width: 140px;
+    text-align: center;
+}
+
+/*footer section*/
+footer{
+    padding: 2rem 8rem;
+    background-color: rgb(28, 40, 53);
+    color: white;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.foot a{
+    color: white;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.ps{
+    font-weight: 500;
+}
+.copyright{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+  /*mobile section*/
+  @media (max-width : 900px) {
+   
+    .manu-btn{
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 2rem;
+        background-color: #6d6c6c;
+        z-index: 999;
+
+    }
+    
+    
+    
+    .mobile-menu, .mobile-menu-exit {
+        display: block;
+        cursor: pointer;
+      }
+      .mobile-menu{
+        width: 40px;
+        position: fixed;
+        right: 1.8rem;
+        top: -2.1rem;
+
+      }
+      .mobile-menu-exit{
+        width: 40px;
+        margin-top: -5rem;
+        margin-left: 6rem;
+      }
+    .right-top li{
+        padding: 1rem;
+        color: black;
+        font-weight: 600;
+    }
+/*head section*/
+    .head-section{
+        text-align: center;
+        padding: 7rem;
+        line-height: 4rem;
+    }
+    /*hero section*/
+    .hero-section{
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+        
+    }
+     .btn{
+        width: 100px;
+        align-self:center ;
+    }
+    .left-hero-section{
+        padding-top: 3rem;
+    }
+    .right-hero-section img{
+        width: 300px ;
+        height: 300px;
+    }
+    /*middle-hero-section*/
+    .middle-hero-section{
+        margin: 0;
+    }
+    .middle-hero-flex{
+        flex-direction: column;
+    }
+    /*menu section*/
+    .menu-list{
+        flex-direction: column;
+    }
+    .dishes, .drink1{
+        flex-direction: column;
+    }
+    .menu-btn{
+        width: 150px;
+    }
+    /*gallery secxtion*/
+    .Gallery{
+        padding: 4rem;
+        text-align: center;
+    }
+    .gallery-grid{
+        grid-template-columns: repeat(1, 50%);
+        align-self: center;
+    }
+    .photo img{
+        width: 200px;
+        height: 200px;
+    }
+    /*reservation section*/
+    .rev{
+        flex-direction: column;
+        justify-content: center;
+    }
+    input{
+        padding: 8px;
+        width: 150px;
+       
+    }
+    .time, .group, .foodie, .dessert, .driink{
+        margin-left: 6.5rem;
+    }
+    
+    select{
+        padding: 8px;
+        width: 150px;
+        border: 1px solid #000;
+        margin-bottom: 1.4rem;
+        border-radius: 5px;
+    }
+    
+    .rev-btn{
+        width: 150px;
+    }
+    /*footer section*/
+    .foot{
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+  }
